@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/8b94f344a4.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div class="main">
+            <div class="left">
+            <div class="head-1">
+                <h1>Calculator</h1>
+                        </div>
+                        <div class="textarea">
+                            <input type="text" value="" id="subVal" disabled
+                                style="background-color: white; border: none; font-size: 28px;"><br>
+                            <input type="text" value="0" id="inputVal" style="border: none; font-size: 28px;">
+                        </div>
+                        <div>
+                            <button class="button" onclick="clearAll()">AC</button>
+                            <button class="button" onclick="getValue('%')">%</button>
+                            <button class="button" onclick="removeLastDigit()"><i
+                                    class="fa-solid fa-delete-left"></i></button>
+                            <button class="button" onclick="getValue('/')"><i class="fa-solid fa-divide"></i></button>
+                        </div>
+                        <div>
+                            <button class="button" onclick="getValue('7')" style="background-color: white;">7</button>
+                            <button class="button" onclick="getValue('8')" style="background-color: white;">8</button>
+                            <button class="button" onclick="getValue('9')" style="background-color: white;">9</button>
+                            <button class="button" onclick="getValue('*')">x</i></button>
+                        </div>
+                        <div>
+                            <button class="button" onclick="getValue('4')" style="background-color: white;">4</button>
+                            <button class="button" onclick="getValue('5')" style="background-color: white;">5</button>
+                            <button class="button" onclick="getValue('6')" style="background-color: white;">6</button>
+                            <button class="button" onclick="getValue('-')">-</button>
+                        </div>
+                        <div>
+                            <button class="button" onclick="getValue('1')" style="background-color: white;">1</button>
+                            <button class="button" onclick="getValue('2')" style="background-color: white;">2</button>
+                            <button class="button" onclick="getValue('3')" style="background-color: white;">3</button>
+                            <button class="button" onclick="getValue('+')">+</button>
+                        </div>
+                        <div>
+                            <button class="button" onclick="getValue('.')" style="background-color: white;">.</button>
+                            <button class="button" onclick="getValue('0')" style="background-color: white;">0</button>
+                            <button class="button" onclick="getValue('.')" style="background-color: white;">.</button>
+                            <button class="button" onclick="solve()"
+                                style="background-color: rgb(37, 37, 236); color: white;">=</button>
+                        </div>
+            </div>
+            <div class="right">
+        <div>
+            <h1>History</h1>
+        </div>
+        <div class="header">
+            <div id="historyDiv">
+                <!-- <div class="his">
+                    <p>5-2 =</p>
+                    <p>3</p>
+                </div> -->
+            </div>
+            <div id="deleteBtn">
+                <button onclick="clearHistory()">Clear All</button>
+            </div>
+        </div>
+            </div>
+        </div>
+        <script src="./calc.js"></script>
+    </body>
+
+</html>
