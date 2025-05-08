@@ -51,6 +51,7 @@ function showHistory(equation, ans)
 
 function clearHistory()
 {
+    if(historyDiv.innerHTML==="")return
     var choice = confirm("Are you sure you want to delete history ?");
     if(choice)
     {
